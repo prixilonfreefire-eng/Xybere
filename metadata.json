@@ -1,0 +1,7 @@
+{
+  "name": "SocialBook - Modern Desktop Social Network",
+  "description": "Pixel-perfect modern Facebook desktop web interface with responsive feed, stories rail, status composer, reactions, messenger dock, and dark mode.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

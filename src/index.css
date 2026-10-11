@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  * {
+    border-color: var(--border-color, #CED0D4);
+  }
+}
+
+/* Custom Facebook-style scrollbar */
+.fb-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+.fb-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.fb-scrollbar::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 4px;
+}
+.fb-scrollbar:hover::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+}
+.dark .fb-scrollbar:hover::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Hide horizontal scrollbars where appropriate */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
